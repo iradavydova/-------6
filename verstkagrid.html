@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .container {
+            display: grid;
+            width: 750px;
+            height: 600px;
+            grid-template-columns: 2fr 1fr 80px;
+            grid-template-rows: 80px 1fr 1fr 100px;
+
+        }
+
+        .header {
+            display: inline-grid;
+            grid-row: 1 / 1;
+            grid-column: 1 / 4;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+
+        }
+
+        .aside {
+            display: inline-grid;
+            grid-row: 2 / 4;
+            grid-column: 2 / 4;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .main {
+            grid-row: 2 / 4;
+            grid-column: 1 / 2;
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .more-1 {
+            grid-row: 3 / 3;
+            grid-column: 1 / 2;
+            display: inline-grid;
+            width: 80%;
+            height: 60%;
+            justify-self: center;
+            align-items: center;
+        }
+
+        .more-2 {
+            grid-row: 3 / 3;
+            grid-column: 2 / 4;
+            display: inline-grid;
+            width: 80%;
+            height: 60%;
+            justify-self: center;
+            align-items: center;
+
+        }
+
+        .more-3 {
+            grid-row: 4 / 4;
+            grid-column: 1 / 3;
+            display: inline-grid;
+            width: 90%;
+            height: 60%;
+            justify-self: center;
+            align-items: center;
+
+        }
+
+        .main-text {
+            grid-row: 1 / 1;
+            grid-column: 1 / 4;
+
+        }
+
+        .footer {
+            font-weight: bold;
+            display: grid;
+            grid-row: 4 / 4;
+            grid-column: 1 / 4;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-1 {
+            width: 150px;
+            height: 50px;
+            grid-column: 1 / 1;
+            display: inline-grid;
+            align-items: center;
+        }
+
+        .footer-2 {
+            width: 150px;
+            height: 50px;
+            grid-column: 2 / 2;
+            display: inline-grid;
+            align-items: center;
+        }
+
+        .footer-3 {
+            width: 150px;
+            height: 50px;
+            grid-column: 3 / 3;
+            display: inline-grid;
+            align-items: center;
+        }
+
+        .footer-4 {
+            width: 150px;
+            height: 50px;
+            grid-column: 4 /4;
+            display: inline-grid;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" style="background-color: rgb(214, 214, 218);">[Шапка страницы]</header>
+        <section class="main" style="background-color: rgb(250, 229, 209);">
+            <div class="main-text">[Основная часть]</div>
+            <div class="more-1" style="background-color: rgb(252, 180, 97);">[Еще 1]</div>
+            <div class="more-2" style="background-color: rgb(252, 180, 97)">[Еще 2]</div>
+            <div class="more-3" style="background-color: rgb(252, 180, 97)">[Еще 3]</div>
+        </section>
+        <aside class="aside" style="background-color: aquamarine;">[Боковая область]</aside>
+        <footer class="footer" style="background-color: rgb(242, 242, 247)">
+            <div class="footer-1" style="background-color: brown;">[Секция футера 1]</div>
+            <div class="footer-2" style="background-color: brown;">[Секция футера 2]</div>
+            <div class="footer-3" style="background-color: brown;">[Секция футера 3]</div>
+            <div class="footer-4" style="background-color: brown;">[Секция футера 4]</div>
+        </footer>
+    </div>
+</body>

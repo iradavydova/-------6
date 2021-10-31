@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Virtual healthcare for you</title>
+    <style type="text/css">
+        .header {
+            grid-area: header;
+            width: 1487px;
+            height: 719px;
+            
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .content-1 {
+            grid-area: content-1;
+        }
+
+        .content-2 {
+            grid-area: content-2;
+        }
+
+        .content-3 {
+            grid-area: content-3;
+        }
+
+        .content-4 {
+            grid-area: content-4;
+        }
+
+        .content-5 {
+            grid-area: content-5;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            width: 1600px;
+            height: 5870px;
+            background: #FFFFFF;
+            grid-template-areas:
+                "header header"
+                "content-1 content-1"
+                "content-2 content-2"
+                "content-3 content-3"
+                "content-4 content-4"
+                "content-5 content-5"
+                "footer footer";
+        }
+        .first-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        
+        }
+
+        .first-logo {
+            width: 160px;
+            height: 41px;
+            grid-column: 1 / 2;
+            justify-self: start;
+        }
+
+        .menu {
+            width: 545px;
+            height: 23px;
+            grid-column: 4 / 4;
+            
+
+        }
+
+        .second-row {
+            display: grid;
+            grid-template-columns: 725px 1fr;
+        }
+
+        .header-text {
+            width: 445px;
+            height: 338px;
+            grid-column: 1 / 2;
+            align-self: center;
+            justify-self: center;
+        
+        }
+
+        .headline {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 56px;
+            color: #000000;
+
+        }
+
+        .consult-button {
+            background: #458FF6;
+            border-radius: 55px;
+            opacity: 0.22;
+        }
+
+        .illustration-1 {
+            width: 693px;
+            height: 598px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="first-row">
+                <img class="first_logo" src="logo.png" alt="logo">
+                <nav class="menu">
+                    <a class="menu1" href="#">Home</a>
+                    <a class="menu2" href="#">Find a doctor</a>
+                    <a class="menu3" href="#">Apps</a>
+                    <a class="menu4" href="#">Testimonials</a>
+                    <a class="menu5" href="#">About us</a>
+                </nav>
+            </div>
+            <div class="second-row">
+            <div class="header-text">
+                <h1 class="headline">Virtual healthcare for you</h1>
+                <div class="text">Trafalgar provides progressive, and affordable
+                    healthcare, accessible on mobile and online
+                    for everyone</div>
+                <div class="consult-button">Consult today</div>
+            </div>
+            <div class="main-image">
+                <img class="illustration-1" alt="illustration of consultation with a doctor" src="illustration.png">
+            </div>
+            </div>
+
+        </header>
+        <div class="content-1">Content-1</div>
+        <div class="content-2">Content-2</div>
+        <div class="content-3">Content-3</div>
+        <div class="content-4">Content-4</div>
+        <div class="content-5">Content-5</div>
+        <footer class="foooter"></footer>
+    </div>
+</body>
